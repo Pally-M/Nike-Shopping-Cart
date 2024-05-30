@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nike Shopping Cart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <div class="container">
+         <div class="row">
+            <div class="header">
+               <h1>Nike T-shirt</h1>
+               <div class="item-display">Items:0</div><!--this is where the product qauntity should be displayed-->
+            </div>
+                  <!--this is a div that contains the nike shopping cart-->
+            <div class="shopping-cart">
+
+               <!--first product-->
+               <div class="item">
+                  <img src="nike-images/nike-image1.jpg" alt="t-shirts" class="image">
+                  <div class="description">
+                     <p class="item-name">Product 1</p>
+                     <p>Girls T-shirt</p>
+                     <p data-price="432.87">R432.87</p><!--I have put on the attribute data- to store the cost of the product-->
+                  </div>
+               
+                  <div class="quantity">
+                     <button class="minus-button">-</button>
+                     <input type="number" value="0" class="input-quantity" max="50" min="-0">  
+                     <button class="plus-button">+</button>
+                  </div>
+                  
+                  <!--This where the results of the product will be displayed based on the quantity that has been inserted-->
+                  <div class="total-cost">
+                     <div class="input-cost">R0.00</div>
+                     <button class="add-to-cart">Add to Cart</button>
+                     <button class="delete-button">x</button>
+                  </div>
+               </div>
+               <hr>
+
+               <!--second product-->
+               <div class="item">
+                  <img src="nike-images/nike-image2.jpg" alt="t-shirts" class="image">
+                  <div class="description">
+                     <p class="item-name">Product 2</p>
+                     <p>Girls T-shirt</p>
+                     <p data-price="2243.87">R343.87</p><!--I have put on the attribute data- to store the cost of the product-->
+                  </div>
+               
+                  <div class="quantity">
+                     <button class="minus-button">-</button>
+                     <input type="number" value="0" class="input-quantity" max="52" min="-0">  
+                     <button class="plus-button">+</button>
+                  </div>
+                  
+                  <!--This where the results of the product will be displayed based on the quantity that has been inserted-->
+                  <div class="total-cost">
+                     <div class="input-cost">R0.00</div>
+                     <button class="add-to-cart">Add to Cart</button>
+                     <button class="delete-button">x</button>
+                  </div>
+               </div>
+               <hr>
+                  <!--third product-->
+                  <div class="item">
+                     <img src="nike-images/nike-image3.jpg" alt="t-shirts" class="image">
+                     <div class="description">
+                        <p class="item-name">Product 3</p>
+                        <p> Girls T-shhirt</p>
+                        <p data-price="993.43">R493.43</p><!--I have put on the attribute data- to store the cost of the product-->
+                     </div>
+                  
+                     <div class="quantity">
+                        <button class="minus-button">-</button>
+                        <input type="number" value="0" class="input-quantity" max="28" min="-0">  
+                        <button class="plus-button">+</button>
+                     </div>
+                     
+                     <!--This where the results of the product will be displayed based on the quantity that has be inserted-->
+                     <div class="total-cost">
+                        <div class="input-cost">R0.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="delete-button">x</button>
+                     </div>
+                  </div>
+                  <hr>
+
+                     <!--fourth product-->
+               <div class="item">
+                  <img src="nike-images/nike-image4.jpg" alt="t-shirts" class="image">
+                  <div class="description">
+                     <p class="item-name">Product 4</p>
+                     <p>Girls T-shirt</p>
+                     <p data-price="1328.49">R428.49</p><!--I have put on the attribute data- to store the cost of the product-->
+                  </div>
+               
+                  <div class="quantity">
+                     <button class="minus-button">-</button>
+                     <input type="number" value="0" class="input-quantity" max="32" min="-0">  
+                     <button class="plus-button">+</button>
+                  </div>
+                  
+                  <!--This where the results of the product will be displayed based on the quantity that has be inserted-->
+                  <div class="total-cost">
+                     <div class="input-cost">R0.00</div>
+                     <button class="add-to-cart">Add to Cart</button>
+                     <button class="delete-button">x</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="cart-container">
+               <div id="root"></div>
+               <div class="side-cart">
+                  <div class="head">
+                     <p>Your Cart</p>
+                  </div>
+                  <div class="cartItem">Your cart is empty</div>
+                  <div class="foot">
+                     <h3>Total</h3>
+                     <h3 id="total">R 0.00</h3>
+                  </div>
+               </div>
+         </div>
+      </div>
+      
+        
+        <script src="script.js" ></script>
+    </body>
+</html>
